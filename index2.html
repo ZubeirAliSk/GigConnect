@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Freelancer Platform</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style2.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <h2>FreelanceHub</h2>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Browse Gigs</a>
+                <a href="#">Post a Job</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero swiper heroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="hero_for_freenlacer swiper-slide card">
+                        <div class="hero_content">
+                            <h1>Hire Expert Freelancers for Your Project</h1>
+                            <p>Find the right talent for web development, design, writing, and more.</p>
+                            <div class="search-bar">
+                                <input type="text" placeholder="What service are you looking for?">
+                                <button>Search</button>
+                            </div>
+                        </div>
+                        <div class="hero_image">
+                            <img src="images/hero_meeting_image.png" alt="person meeting">
+                        </div>
+                    </div>
+                    <div class="hero_for_client swiper-slide card">
+                        <div class="hero_content">
+                            <h1>Get Job Opportunity from Top Client</h1>
+                            <p>Find Best and Suitable job for Yourself</p>
+                            <div class="search-bar">
+                                <input type="text" placeholder="What service are you looking for?">
+                                <button>Search</button>
+                            </div>
+                        </div>
+                        <div class="hero_image">
+                            <img src="images/hero_meeting_image.png" alt="person meeting">
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination & Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>  
+                    
+        </section>
+        <!-- Categories -->
+        <section class="popular_category">
+            <h2>Popular Categories</h2>
+            <div class="categories">
+                <a href="" class="card">
+                    <img src="images/development.png" alt="code bracket image">
+                    <span>Web Development</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/graphic_designer.png" alt="paint bursh and tray image">
+                    <span>Graphic Design</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/content_writing.png" alt="pen image">
+                    <span>Content Writing</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/sales_marketing.png" alt="andshake and dollar image">
+                    <span>Marketing</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/video_editing.png" alt="video music idea image">
+                    <span>Video Editing</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/engineer.png" alt="engineer image">
+                    <span>Engineering</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/accounting.png" alt="calculator and account image">
+                    <span>Accounting</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/lawyer.png" alt="hand law image">
+                    <span>Leagal and Lawyer</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/support.png" alt="man with mic image">
+                    <span>HR & Support</span>
+                </a>
+                <a href="" class="card">
+                    <img src="images/teacher.png" alt="tacher and board image">
+                    <span>Teaching</span>
+                </a>
+            </div>
+        </section>
+        <!-- Featured Freelancers -->
+        <section>
+            <h2>Featured Freelancers</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card">👤 John Doe <br>⭐ 4.9 <br>$20/hr </div>
+                    <div class="swiper-slide card">👤 Jane Smith <br>⭐ 5.0 <br>$25/hr </div>
+                    <div class="swiper-slide card">👤 Ali Khan <br>⭐ 4.8 <br>$18/hr </div>
+                    <div class="swiper-slide card">👤 Sara Lee <br>⭐ 4.7 <br>$22/hr </div>
+                </div>
+                <!-- Pagination & Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <!-- How It Works -->
+        <section>
+            <h2>How It Works</h2>
+            <div class="categories">
+                <div class="card">1. Post a Job</div>
+                <div class="card">2. Get Proposals</div>
+                <div class="card">3. Hire the Best</div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section>
+            <h2>Testimonials</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card">"Great platform, found my dream job!"</div>
+                    <div class="swiper-slide card">"Amazing freelancers, highly recommend."</div>
+                    <div class="swiper-slide card">"Smooth experience for both clients and freelancers."</div>
+                    <div class="swiper-slide card">"great work"</div>
+                    <div class="swiper-slide card">"they take reasonabl price"</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 FreelanceHub | About | Careers | Blog | Support</p>
+        </footer>
+        <!-- Add Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            // Example JS: Handle search
+            document.querySelector(".search-bar button").addEventListener("click", () => {
+                const query = document.querySelector(".search-bar input").value;
+                alert("Searching for: " + query);
+            });
+        </script>
+        <script>
+            // Init Swiper
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2
+                    }, // 2 slides on tablets
+                    1024: {
+                        slidesPerView: 3
+                    } // 3 slides on desktop
+                }
+            });
+            var heroswiper = new Swiper(".heroSwiper", {
+                slidesPerView: 1,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },  
+            });
+
+        </script>
+    </body>
+</html>
