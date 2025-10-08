@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Dashboard - GigConnect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      padding: 15px 20px;
+      display: block;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: blue;
+    }
+
+    .dashboard {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .filters {
+      width: 250px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      height: fit-content;
+    }
+
+    .filters h3 {
+      margin-bottom: 15px;
+    }
+
+    .filters label {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .filters select,
+    .filters input[type="text"],
+    .filters input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .filter-btn {
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .filter-btn:hover {
+      background: darkblue;
+    }
+
+    .gigs-section {
+      flex: 1;
+    }
+
+    .search-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .search-bar button {
+      padding: 10px 15px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background: darkblue;
+    }
+
+    .gig-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .gig-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .gig-card button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .gig-card button:hover {
+      background: darkblue;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="dashboard">
+    <!-- Sidebar Filters -->
+    <aside class="filters">
+      <h3>Filter Gigs</h3>
+
+      <label>
+        Category:
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Design">Design</option>
+          <option value="Writing">Writing</option>
+           <option value="Writing">Data Entery</option>
+            <option value="Writing">Data Analytics</option>
+             <option value="Writing">Video Editing</option>
+             
+        </select>
+      </label>
+
+      <label>
+        Skills:
+        <input type="text" id="skillFilter" placeholder="e.g. React, Photoshop">
+      </label>
+
+      <label>
+        Minimum Salary ($):
+        <input type="number" id="salaryFilter" placeholder="e.g. 150">
+      </label>
+
+      <label>
+        <input type="checkbox" id="remoteFilter"> Work From Home Only
+      </label>
+
+      <button class="filter-btn" onclick="applyFilters()">Apply Filters</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="gigs-section">
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search gigs...">
+        <button onclick="searchGigs()">Search</button>
+      </div>
+
+      <!-- Gig List -->
+      <div class="gig-card" data-category="Web Development" data-skills="HTML,CSS,JavaScript" data-salary="300" data-remote="true">
+        <h3>Build a Portfolio Website</h3>
+        <p>Need a responsive portfolio website for showcasing projects.</p>
+        <p><strong>Budget:</strong> $300</p>
+        <p><strong>Work From Home:</strong> Yes</p>
+        <button onclick="applyGig('Build a Portfolio Website')">Apply</button>
+      </div>
+
+      <div class="gig-card" data-category="Design" data-skills="Photoshop,Illustrator" data-salary="100" data-remote="false">
+        <h3>Logo Design for Startup</h3>
+        <p>Looking for a creative logo designer for a tech startup.</p>
+        <p><strong>Budget:</strong> $100</p>
+        <p><strong>Work From Home:</strong> No</p>
+        <button onclick="applyGig('Logo Design for Startup')">Apply</button>
+      </div>
+
+      <div class="gig-card" data-category="Writing" data-skills="Content,SEO" data-salary="200" data-remote="true">
+        <h3>Content Writing - Blogs</h3>
+        <p>Write 5 blog posts on digital marketing topics.</p>
+        <p><strong>Budget:</strong> $200</p>
+        <p><strong>Work From Home:</strong> Yes</p>
+        <button onclick="applyGig('Content Writing - Blogs')">Apply</button>
+      </div>
+    </main>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GigConnect. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Inside HTML -->
+  <script>
+    // Search functionality
+    function searchGigs() {
+      const term = document.getElementById("searchInput").value.toLowerCase();
+      const gigs = document.querySelectorAll(".gig-card");
+
+      gigs.forEach(gig => {
+        const text = gig.innerText.toLowerCase();
+        gig.style.display = text.includes(term) ? "block" : "none";
+      });
+    }
+
+    // Filter functionality
+    function applyFilters() {
+      const category = document.getElementById("categoryFilter").value;
+      const skill = document.getElementById("skillFilter").value.toLowerCase();
+      const minSalary = parseInt(document.getElementById("salaryFilter").value) || 0;
+      const remoteOnly = document.getElementById("remoteFilter").checked;
+
+      const gigs = document.querySelectorAll(".gig-card");
+
+      gigs.forEach(gig => {
+        const gigCategory = gig.getAttribute("data-category");
+        const gigSkills = gig.getAttribute("data-skills").toLowerCase();
+        const gigSalary = parseInt(gig.getAttribute("data-salary"));
+        const gigRemote = gig.getAttribute("data-remote") === "true";
+
+        const matchCategory = category === "all" || gigCategory === category;
+        const matchSkill = skill === "" || gigSkills.includes(skill);
+        const matchSalary = gigSalary >= minSalary;
+        const matchRemote = !remoteOnly || gigRemote;
+
+        gig.style.display = (matchCategory && matchSkill && matchSalary && matchRemote) ? "block" : "none";
+      });
+    }
+
+    // Apply gig button
+    function applyGig(gigName) {
+      alert("You have applied for: " + gigName);
+    }
+  </script>
+</body>
+</html>

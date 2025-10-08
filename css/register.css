@@ -1,0 +1,101 @@
+/* General body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Section */
+.form-section {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Heading */
+.form-section h2 {
+  margin-bottom: 25px;
+  color: #2563eb;
+  font-size: 24px;
+}
+
+/* Form box layout */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+/* Labels */
+.form-box label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Input fields */
+.form-box input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.form-box input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+/* Submit button */
+.btn.full {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn.full:hover {
+  background: #1e4fd6;
+}
+
+/* Small text under form */
+.small-text {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.small-text a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.small-text a:hover {
+  color: #1e4fd6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 450px) {
+  .form-section {
+    margin: 40px 20px;
+    padding: 25px;
+  }
+}
+

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Platform</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/carousel.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h2>FreelanceHub</h2>
+        <nav>
+            <a href="about.html">About Us</a>
+            <a href="freelancer.html">Browse Gigs</a>
+            <a href="job.html">Get a Job</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+            <a href="login.html" class="login_button">Login</a>
+            <a href="register.html" class="signup_button">Sign Up</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <main>
+        <section class="hero swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <div class="hero_for_freenlacer swiper-slide card">
+                    <div class="hero_content">
+                        <h1>Hire Expert Freelancers for Your Project</h1>
+                        <p>Find the right talent for web development, design, writing, and more.</p>
+                        <div class="search-bar">
+                            <input type="text" placeholder="What service are you looking for?">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                    <div class="hero_image">
+                        <img src="images/hero_meeting_image.png" alt="person meeting">
+                    </div>
+                </div>
+                <div class="hero_for_client swiper-slide card">
+                    <div class="hero_content">
+                        <h1>Get Job Opportunity from Top Client</h1>
+                        <p>Find Best and Suitable job for Yourself</p>
+                        <div class="search-bar">
+                            <input type="text" placeholder="What service are you looking for?">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                    <div class="hero_image">
+                        <img src="images/hero_meeting_image.png" alt="person meeting">
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination & Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+        <!-- Categories -->
+        <section class="popular_category">
+            <div class="container">
+                <div class="heading_view_all">
+                    <h2 class="section_heading">Popular Categories</h2>
+                    <a href="#" class="view_all">View All</a>
+                </div>
+                <div class="categories">
+                    <a href="" class="card">
+                        <img src="images/development.png" alt="code bracket image">
+                        <span>Web Development</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/graphic_designer.png" alt="paint bursh and tray image">
+                        <span>Graphic Design</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/content_writing.png" alt="pen image">
+                        <span>Content Writing</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/sales_marketing.png" alt="andshake and dollar image">
+                        <span>Marketing</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/video_editing.png" alt="video music idea image">
+                        <span>Video Editing</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/engineer.png" alt="engineer image">
+                        <span>Engineering</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/accounting.png" alt="calculator and account image">
+                        <span>Accounting</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/lawyer.png" alt="hand law image">
+                        <span>Leagal and Lawyer</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/support.png" alt="man with mic image">
+                        <span>HR & Support</span>
+                    </a>
+                    <a href="" class="card">
+                        <img src="images/teacher.png" alt="tacher and board image">
+                        <span>Teaching</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Freelancers -->
+        <section class="featured_freelancer">
+            <div class="container">
+                <div class="heading_view_all">
+                    <h2 class="section_heading">Featured Freelancers</h2>
+                    <a href="#" class="view_all">View All</a>
+                </div>
+                <div class="swiper cateogory_Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio">
+                                <img src="images/developer_image.png" alt="gentelman image" class="freelancer_img">
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_name">Jogesh</p>
+                                    <p class="freelancer_skill">Developer</p>
+                                </div>
+                            </div>
+                            <div class="featured_freelancer_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="freelancer_charge">$30/hr</p>
+                            <button class="freelancer_hire">Hire Me</button>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio">
+                                <img src="images/hacker_image.png" alt="gentelman image" class="freelancer_img">
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_name">Jacob</p>
+                                    <p class="freelancer_skill">Ethical Hacker</p>
+                                </div>
+                            </div>
+                            <div class="featured_freelancer_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="freelancer_charge">$50/hr</p>
+                            <button class="freelancer_hire">Hire Me</button>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio">
+                                <img src="images/manager_image.png" alt="gentelman image" class="freelancer_img">
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_name">Mirza</p>
+                                    <p class="freelancer_skill">Product Manager</p>
+                                </div>
+                            </div>
+                            <div class="featured_freelancer_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="freelancer_charge">$60/hr</p>
+                            <button class="freelancer_hire">Hire Me</button>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio">
+                                <img src="images/developer_image.png" alt="gentelman image" class="freelancer_img">
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_name">Jogesh</p>
+                                    <p class="freelancer_skill">Egineer</p>
+                                </div>
+                            </div>
+                            <div class="featured_freelancer_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="freelancer_charge">$30/hr</p>
+                            <button class="freelancer_hire">Hire Me</button>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio">
+                                <img src="images/teacher_image.png" alt="women image" class="freelancer_img">
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_name">Sara</p>
+                                    <p class="freelancer_skill">Teacher</p>
+                                </div>
+                            </div>
+                            <div class="featured_freelancer_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="freelancer_charge">$20/hr</p>
+                            <button class="freelancer_hire">Hire Me</button>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio">
+                                <img src="images/lawyer_image.jpg" alt="gentelman image" class="freelancer_img">
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_name">abhishek</p>
+                                    <p class="freelancer_skill">Lawyer</p>
+                                </div>
+                            </div>
+                            <div class="featured_freelancer_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="freelancer_charge">$30/hr</p>
+                            <button class="freelancer_hire">Hire Me</button>
+                        </div>
+                    </div>
+                    <!-- Pagination & Navigation -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <!-- How It Works -->
+        <section>
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="categories">
+                    <div class="card">1. Post a Job</div>
+                    <div class="card">2. Get Proposals</div>
+                    <div class="card">3. Hire the Best</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="heading_view_all">
+                    <h2 class="section_heading">Testimonials</h2>
+                    <a href="#" class="view_all">View All</a>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio review_div">
+                                <div class="reviewers_bio">
+                                    <img src="images/manager_image.png" alt="gentelman image" class="freelancer_img">
+                                    <p class="freelancer_name reviewers_name">Mirza</p>
+                                    <p class="reviewers_position">Devops at Nexgeno</p>
+                                </div>
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_skill review">"Ezzan did an amazing job editing my
+                                        videos—fast
+                                        turnaround, great attention to detail, and very easy to work with. He follows
+                                        directions well and delivers high-quality work consistently. Highly recommend
+                                        him!"</p>
+                                    <div class="featured_freelancer_rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span class="review_date">26 january 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio review_div">
+                                <div class="reviewers_bio">
+                                    <img src="images/teacher_image.png" alt="teacher image" class="freelancer_img">
+                                    <p class="freelancer_name reviewers_name">sara</p>
+                                    <p class="reviewers_position">Devops at Nexgeno</p>
+                                </div>
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_skill review">"you’re thinking exactly like a real founder.
+                                        You already have a strong concept (a simplified Upwork-style gig platform) — so
+                                        what you need now is a clear visual + structural foundation before coding."</p>
+                                    <div class="featured_freelancer_rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span class="review_date">26 january 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio review_div">
+                                <div class="reviewers_bio">
+                                    <img src="images/hacker_image.png" alt="gentelman image" class="freelancer_img">
+                                    <p class="freelancer_name reviewers_name">Mirza</p>
+                                    <p class="reviewers_position">Devops at Nexgeno</p>
+                                </div>
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_skill review">"Below is a text blueprint of how each page
+                                        should look.
+                                        I can also generate real image mockups (wireframes) for you next."</p>
+                                    <div class="featured_freelancer_rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span class="review_date">26 january 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="freelancer_bio review_div">
+                                <div class="reviewers_bio">
+                                    <img src="images/developer_image.png" alt="gentelman image" class="freelancer_img">
+                                    <p class="freelancer_name reviewers_name">Mirza</p>
+                                    <p class="reviewers_position">Devops at Nexgeno</p>
+                                </div>
+                                <div class="for_name_n_skill">
+                                    <p class="freelancer_skill review">"Would you like me to generate images
+                                        (wireframes) for these pages —
+                                        so you can visualize the layout like a Figma mockup?
+                                        I can make them clean grayscale wireframes, perfect for design planning before
+                                        coding."</p>
+                                    <div class="featured_freelancer_rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span class="review_date">26 january 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="post_job">
+            <div class="container">
+                <div class="post_job_heading_div">
+                    <h2 class="post_job_heading">Ready to get started? Post your first job today!</h2>
+                </div>
+                <div class="post_job_btn_div">
+                    <a href="#" class="post_job_link">Post</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <!-- <footer>
+        <p>&copy; 2025 FreelanceHub | About | Careers | Blog | Support</p>
+    </footer> -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>For Clients</h4>
+                    <ul>
+                        <li><a href="#">How to hire</a></li>
+                        <li><a href="#">Talent Marketplace</a></li>
+                        <li><a href="#">Project Catalog</a></li>
+                        <li><a href="#">Hire an agency</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Business Plus</a></li>
+                        <li><a href="#">Any Hire</a></li>
+                        <li><a href="#">Contract-to-hire</a></li>
+                        <li><a href="#">Direct Contracts</a></li>
+                        <li><a href="#">Hire worldwide</a></li>
+                        <li><a href="#">Hire in the USA</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>For Talent</h4>
+                    <ul>
+                        <li><a href="#">How to find work</a></li>
+                        <li><a href="#">Direct Contracts</a></li>
+                        <li><a href="#">Find freelance jobs worldwide</a></li>
+                        <li><a href="#">Find freelance jobs in the USA</a></li>
+                        <li><a href="#">Win work with ads</a></li>
+                        <li><a href="#">Exclusive resources with Freelancer Plus</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help & support</a></li>
+                        <li><a href="#">Success stories</a></li>
+                        <li><a href="#">Upwork reviews</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Affiliate programme</a></li>
+                        <li><a href="#">Free Business Tools</a></li>
+                        <li><a href="#">Release notes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Investor relations</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Our impact</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Trust, safety & security</a></li>
+                        <li><a href="#">Modern slavery statement</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <d iv class="footer-social">
+                <p>Follow us</p>
+                <div class="footer_social_icons">
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="#" class="footer_social_links"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="footer_social_links"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="footer_social_links"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="footer_social_links"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2015 - 2025 zaalima Global LLC</p>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">CA Notice at Collection</a></li>
+                <li><a href="#">Your Privacy Choices</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Add Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
